@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToRemove.DetailPage">
+    <ContentPage.Content>
+        
+        <ScrollView Padding="30">
+            
+            <VerticalStackLayout
+                Padding="30,0"
+                Spacing="25">
+
+                <Button
+                    x:Name="CounterBtn"
+                    Text="Click me"
+                    Clicked="CounterBtn_OnClicked"
+                    HorizontalOptions="Fill" />
+                
+            </VerticalStackLayout>
+            
+        </ScrollView>
+        
+    </ContentPage.Content>
+    
+</ContentPage>
