@@ -16,6 +16,6 @@ public partial class ContainerPage : FlyoutPage
 	{
 		var nav = (NavigationPage)Detail;
 		var current = nav.CurrentPage;
-		current.Navigation.PushAsync(new TestPage());
+		current.Navigation.PushAsync(new SimpleCalcPage());
 	}
 }

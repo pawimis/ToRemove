@@ -8,8 +8,13 @@ public partial class DetailPage : ContentPage
 		
 	}
 
-	private void CounterBtn_OnClicked(object? sender, EventArgs e)
+	private void SimpleCalcBtn_OnClicked(object? sender, EventArgs e)
 	{
-		Navigation.PushAsync(new TestPage());
+		Navigation.PushAsync(new SimpleCalcPage());
 	}
+
+    private void AdvancedCalcBtn_OnClicked(object? sender, EventArgs e)
+    {
+        Navigation.PushAsync(new SimpleCalcPage());
+    }
 }

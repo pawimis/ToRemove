@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -12,8 +12,13 @@
                 Spacing="25">
 
                 <Button
-                    x:Name="CounterBtn"
-                    Text="Click me"
+                    x:Name="SimpleCalcBtn"
+                    Text="Prosty kalkulator"
+                    Clicked="CounterBtn_OnClicked"
+                    HorizontalOptions="Fill" />
+                <Button
+                    x:Name="AdvancedCalcBtn"
+                    Text="Kalkulator"
                     Clicked="CounterBtn_OnClicked"
                     HorizontalOptions="Fill" />
                 

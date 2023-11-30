@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace ToRemove;
 
-public partial class TestPage : ContentPage
+public partial class SimpleCalcPage : MetroWindow
 {
-	public TestPage()
+	public SimpleCalcPage()
 	{
 		InitializeComponent();
-	}
+		BindingContext = new ViewModel();
+
+    }
 
 	protected override bool OnBackButtonPressed()
 	{
