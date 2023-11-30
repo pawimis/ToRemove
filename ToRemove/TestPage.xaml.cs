@@ -14,9 +14,10 @@ public partial class TestPage : ContentPage
 		InitializeComponent();
 	}
 
-	protected override bool OnBackButtonPressed()
-	{
-		Debug.WriteLine("back");
-		return base.OnBackButtonPressed();
-	}
+    void Button_Clicked(System.Object sender, System.EventArgs e)
+    {
+		Debug.WriteLine("Test");
+        Debug.WriteLine(Navigation.NavigationStack);
+        Navigation.PopAsync();
+    }
 }

@@ -4,23 +4,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ToRemove.DetailPage">
     <ContentPage.Content>
-        
+
         <ScrollView Padding="30">
-            
+
             <VerticalStackLayout
                 Padding="30,0"
                 Spacing="25">
 
                 <Button
+                    AutomationId="DetailPage_Button_ClickMe"
                     x:Name="CounterBtn"
                     Text="Click me"
                     Clicked="CounterBtn_OnClicked"
                     HorizontalOptions="Fill" />
+
+                <Label Text="No gesture"></Label>
+
+                <Label Text="Swipe gesture">
+                    <Label.GestureRecognizers>
+                        <SwipeGestureRecognizer Direction="Down" Swiped="SwipeGestureRecognizer_OnSwiped"></SwipeGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
                 
+                <Label Text="Gesture recognition">
+                    
+                    <Label.GestureRecognizers>
+                        
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped"/>
+                        
+                    </Label.GestureRecognizers>
+                    
+                </Label>
+
             </VerticalStackLayout>
-            
+
         </ScrollView>
-        
+
     </ContentPage.Content>
-    
+
 </ContentPage>
