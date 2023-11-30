@@ -13,7 +13,7 @@
 
                 <Button
                     x:Name="SimpleCalcBtn"
-                    Text="Prosty kalkulator"
+                    Text="Prosty kalkulator test"
                     Clicked="CounterBtn_OnClicked"
                     HorizontalOptions="Fill" />
                 <Button
